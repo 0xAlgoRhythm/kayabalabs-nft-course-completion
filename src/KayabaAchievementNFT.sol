@@ -38,3 +38,13 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
         AchievementType achievementType,
         string details
     );
+
+    event FundsWithdrawn(address indexed owner, uint256 amount);
+    
+    constructor(
+        string memory name,
+        string memory symbol,
+        string memory baseURI
+    ) ERC721(name, symbol) Ownable(msg.sender) {
+        _baseTokenURI = baseURI;
+    }
