@@ -52,3 +52,17 @@ contract KayabaAchievementNFTTest is Test {
             "1.json"
         );
     }
+
+      function testBatchMint() public {
+        address[] memory recipients = new address[](3);
+        recipients[0] = student1;
+        recipients[1] = student2;
+        recipients[2] = address(0x3);
+        
+        nft.batchMintAchievements(
+            recipients,
+            KayabaAchievementNFT.AchievementType.HACKATHON_WINNER,
+            "ETHGlobal 2024",
+            "https://metadata.kayabalabs.com/hackathon"
+        );
+        
