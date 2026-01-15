@@ -12,3 +12,14 @@ contract KayabaAchievementNFTTest is Test {
     
     uint256 constant MINT_FEE = 0.0003 ether;
     
+
+    function setUp() public {
+        owner = address(this);
+        student1 = address(0x1);
+        student2 = address(0x2);
+
+        nft = new KayabaAchievementNFT(
+            "Kayaba Achievement",
+            "KAYABA",
+            "https://metadata.kayabalabs.com/achievements"
+        );
