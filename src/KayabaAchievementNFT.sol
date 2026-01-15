@@ -150,4 +150,12 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
             ownerOf(tokenId)
         );
     }
+
+    /**
+     * @dev Get total minted tokens
+     */
+    function totalSupply() public view returns (uint256) {
+        return _nextTokenId;
+    }
+    
     
