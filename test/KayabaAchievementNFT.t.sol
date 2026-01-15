@@ -42,4 +42,13 @@ contract KayabaAchievementNFTTest is Test {
         assertEq(nft.ownerOf(tokenId), student1);
         assertEq(address(nft).balance, MINT_FEE);
     }
-    
+    function testMintFailsWithInsufficientFee() public {
+        vm.prank(student1);
+        vm.expectRevert("Insufficient minting fee");
+        nft.mintAchievement{value: 0.0001 ether}(
+            student1,
+            KayabaAchievementNFT.AchievementType.COURSE_COMPLETION,
+            "Solidity Fundamentals",
+            "1.json"
+        );
+    }
