@@ -82,7 +82,8 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
     }
     
 
-    **
+    /**
+     **
      * @dev Batch mint achievements (only owner)
      * Useful for awarding multiple students at once
      */
@@ -97,7 +98,7 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
             _safeMint(recipients[i], tokenId);
 
 
-            / Create unique metadata URI for each token
+            // Create unique metadata URI for each token
             string memory metadataURI = string(
                 abi.encodePacked(baseMetadataURI, "/", tokenId.toString(), ".json")
             );
@@ -129,9 +130,10 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
         _baseTokenURI = baseURI;
     }
     
-    **
+    /**
      * @dev Get achievement info for a token
      */
+    
     function getAchievementInfo(uint256 tokenId) 
         public 
         view 
