@@ -158,4 +158,9 @@ contract KayabaAchievementNFT is ERC721, ERC721URIStorage, Ownable {
         return _nextTokenId;
     }
     
+
+     // Override functions
+    function _baseURI() internal view override returns (string memory) {
+        return _baseTokenURI;
+    }
     
