@@ -38,4 +38,8 @@ contract KayabaAchievementNFTTest is Test {
             "Solidity Fundamentals",
             "1.json"
         );
-        
+         
+        assertEq(nft.ownerOf(tokenId), student1);
+        assertEq(address(nft).balance, MINT_FEE);
+    }
+    
