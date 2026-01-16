@@ -23,12 +23,12 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
 
     // Student information struct
     struct StudentInfo {
-        string name;           // Full name of the student
-        string email;          // Student email (optional, can be empty)
+        //string name;           // Full name of the student
+        //string email;          // Student email (optional, can be empty)
         string studentId;      // Student ID or enrollment number
         string courseName;     // Course completed
         string completionDate; // Date of completion
-        string grade;          // Final grade (e.g., "A", "95%", "Pass")
+        //string grade;          // Final grade (e.g., "A", "95%", "Pass")
     }
 
     uint256 private _nextTokenId;
@@ -44,7 +44,7 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
     event CertificateMinted(
         address indexed studentWallet,
         uint256 indexed tokenId,
-        string studentName,
+        // string studentName,
         string courseName,
         string completionDate
     );
@@ -69,16 +69,16 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
      */
     function mintCertificate(
         address to,
-        string memory name,
-        string memory email,
+        //string memory name,
+        //string memory email,
         string memory studentId,
         string memory course,
         string memory date,
-        string memory grade,
+        //string memory grade,
         string memory metadataURI
     ) public payable returns (uint256) {
         require(msg.value >= MINT_FEE, "Insufficient minting fee");
-        require(bytes(name).length > 0, "Student name required");
+        //require(bytes(name).length > 0, "Student name required");
         require(bytes(course).length > 0, "Course name required");
 
         uint256 tokenId = _nextTokenId++;
@@ -87,15 +87,16 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         
         // Store all student information
         studentInfo[tokenId] = StudentInfo({
-            name: name,
-            email: email,
+            //name: name,
+            //email: email,
             studentId: studentId,
             courseName: course,
             completionDate: date,
-            grade: grade
+
+            //grade: grade
         });
         
-        emit CertificateMinted(to, tokenId, name, course, date);
+        emit CertificateMinted(to, tokenId, studentId, course, date);
          
         // Refund excess payment
         if (msg.value > MINT_FEE) {
@@ -136,19 +137,19 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
      */
     function batchMintCertificates(
         address[] memory recipients,
-        string[] memory names,
-        string[] memory emails,
+        //string[] memory names,
+        //string[] memory emails,
         string[] memory studentIds,
         string memory course,
         string[] memory dates,
-        string[] memory grades,
+        //string[] memory grades,
         string memory baseMetadataURI
     ) public onlyOwner {
-        require(recipients.length == names.length, "Recipients and names length mismatch");
+        //require(recipients.length == names.length, "Recipients and names length mismatch");
         require(recipients.length == dates.length, "Recipients and dates length mismatch");
-        require(recipients.length == grades.length, "Recipients and grades length mismatch");
+        //require(recipients.length == grades.length, "Recipients and grades length mismatch");
         require(recipients.length == studentIds.length, "Recipients and IDs length mismatch");
-        require(recipients.length == emails.length, "Recipients and emails length mismatch");
+        //require(recipients.length == emails.length, "Recipients and emails length mismatch");
         
         for (uint256 i = 0; i < recipients.length; i++) {
             uint256 tokenId = _nextTokenId++;
@@ -162,15 +163,15 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
             
             // Store student information
             studentInfo[tokenId] = StudentInfo({
-                name: names[i],
-                email: emails[i],
+                //name: names[i],
+                //email: emails[i],
                 studentId: studentIds[i],
                 courseName: course,
                 completionDate: dates[i],
-                grade: grades[i]
+                //grade: grades[i]
             });
             
-            emit CertificateMinted(recipients[i], tokenId, names[i], course, dates[i]);
+            emit CertificateMinted(recipients[i], tokenId, studentIds[i], course, dates[i]);
         }
     }
 
@@ -199,24 +200,24 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         public 
         view 
         returns (
-            string memory name,
-            string memory email,
+            //string memory name,
+            //string memory email,
             string memory studentId,
             string memory course,
             string memory date,
-            string memory grade,
+            //string memory grade,
             address wallet
         ) 
     {
         require(_ownerOf(tokenId) != address(0), "Token does not exist");
         StudentInfo memory info = studentInfo[tokenId];
         return (
-            info.name,
-            info.email,
+            //info.name,
+            //info.email,
             info.studentId,
             info.courseName,
             info.completionDate,
-            info.grade,
+            //info.grade,
             ownerOf(tokenId)
         );
     }
