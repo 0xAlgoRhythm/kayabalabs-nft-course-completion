@@ -1,0 +1,32 @@
+{
+  "name": "Kayaba Labs - Solidity Fundamentals Certificate",
+  "description": "Certificate awarded for completing Solidity Fundamentals at Kayaba Labs",
+  "image": "ipfs://bafkreiawpz2cyeckfyjck5ugdkpekcoot2t2ooprmptzqwc4kixc7h3pli",
+  "external_url": "https://kayabalabs.com",
+  "attributes": [
+    {
+      "trait_type": "Student Name",
+      "value": "Test Student"
+    },
+    {
+      "trait_type": "Student ID",
+      "value": "KAYABA-2024-001"
+    },
+    {
+      "trait_type": "Course Name",
+      "value": "Solidity Fundamentals"
+    },
+    {
+      "trait_type": "Grade",
+      "value": "A"
+    },
+    {
+      "trait_type": "Completion Date",
+      "value": "January 15, 2024"
+    },
+    {
+      "trait_type": "Institution",
+      "value": "Kayaba Labs"
+    }
+  ]
+}
