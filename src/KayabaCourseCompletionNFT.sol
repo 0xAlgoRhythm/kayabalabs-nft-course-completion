@@ -16,3 +16,12 @@ import "@openzeppelin/contracts/utils/Strings.sol";
  * - Batch minting available for owner
  */
 
+contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
+    using Strings for uint256;
+
+    // Student information struct
+    struct StudentInfo {
+        string studentId;      // Student ID (e.g., KL-SOL-0001)
+        string courseName;     // Course completed
+        string completionDate; // Date of completion
+    }
