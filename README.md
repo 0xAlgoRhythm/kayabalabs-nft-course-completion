@@ -67,6 +67,9 @@ $ cast --help
 
 ---
 
+- Foundry: https://book.getfoundry.sh/
+- OpenZeppelin: https://docs.openzeppelin.com/
+- Scroll: https://docs.scroll.io/
 - Base: https://docs.base.org/
 
 **Tools:**
