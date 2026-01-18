@@ -1,4 +1,12 @@
 
+
+### "Where is my NFT?"
+
+**Response:**
+```
+Your NFT is in your wallet! View it:
+
+METHOD 1 - MetaMask:
 1. Open MetaMask
 2. Switch to Scroll network
 3. Click "NFTs" tab
