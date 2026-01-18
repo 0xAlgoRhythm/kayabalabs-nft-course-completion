@@ -6,6 +6,10 @@ Congratulations on completing {COURSE_NAME}!
 Claim your blockchain certificate:
 👉 {MINT_URL}
 
+Your certificate will be:
+✅ Permanent blockchain record
+✅ Visible on OpenSea
+✅ Non-transferable (soulbound)
 
 Questions? Reply to this email.
 
