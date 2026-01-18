@@ -211,7 +211,26 @@ function batchMintCertificates(
         ) 
 
     {
-        require(_exists(tokenId), "Token does not exist");  
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        //require(_exists(tokenId), "Token does not exist");  
         StudentInfo memory info = studentInfo[tokenId];
         return (info.studentId, info.courseName, info.completionDate, ownerOf(tokenId));
     }
+
+    /**
+     * @dev Get student ID for a specific token
+     */
+    function getStudentId(uint256 tokenId) public view returns (string memory) {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        return studentInfo[tokenId].studentId;
+    }
+
+    /**
+     * @dev Get all certificates issued to a specific wallet address
+     */
+
+function getStudentCertificates(address student) 
+        public 
+        view 
+        returns (uint256[] memory) 
+ 
