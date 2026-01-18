@@ -67,6 +67,12 @@ $ cast --help
 
 ---
 
+### Step 1: Deploy to Mainnet (1 hour)
+Follow `DEPLOYMENT.md` to deploy to Scroll or Base
+
+### Step 2: Mint Test Certificates (15 minutes)
+Mint 2-3 test certificates to verify everything works
+
 ### Step 3: Verify OpenSea Integration (30 minutes)
 Wait 30 minutes, check if certificates appear on OpenSea
 
