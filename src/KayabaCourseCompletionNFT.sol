@@ -200,4 +200,12 @@ function batchMintCertificates(
      * @dev Get complete certificate information for a token
      */
 
-    
+    function getCertificateInfo(uint256 tokenId) 
+        public 
+        view 
+        returns (
+            string memory studentId,
+            string memory course,
+            string memory date,
+            address wallet
+        ) 
