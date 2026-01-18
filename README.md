@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+    --private-key $PRIVATE_KEY
+```
+
+---
 
 ## 📋 What's Left to Build
 
