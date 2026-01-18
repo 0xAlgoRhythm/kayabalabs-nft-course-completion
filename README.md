@@ -31,6 +31,7 @@ $ forge test
 
 ```shell
 $ forge fmt
+function getCertificateInfo(uint256 tokenId) 
 ```
 
 **Technology Stack:**
