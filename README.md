@@ -67,6 +67,9 @@ $ cast --help
 
 ---
 
+- Metadata: https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreia6rxkezois2eymzxbikacx5egnrfvteqsky6gcswscjzmlummccu
+
+**Documentation:**
 - Foundry: https://book.getfoundry.sh/
 - OpenZeppelin: https://docs.openzeppelin.com/
 - Scroll: https://docs.scroll.io/
