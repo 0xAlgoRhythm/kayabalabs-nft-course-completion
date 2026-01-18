@@ -69,5 +69,8 @@ $ cast --help
 **Estimated Launch Timeline:** 1-2 days
 
 ---
+
+**Built with ❤️ for Kayaba Labs students**
+
 Last Updated: January 18, 2026
 Version: 1.0.0
