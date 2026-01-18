@@ -65,6 +65,11 @@ $ anvil --help
 $ cast --help
 ```
 
+
+### Phase 5: Advanced Features
+- [ ] Multi-signature wallet for fee withdrawals
+- [ ] Dynamic metadata (update course info post-mint)
+- [ ] Rarity/achievement levels
 - [ ] Certificate renewal/expiration system
 - [ ] Cross-chain certificate bridge
 
