@@ -1,3 +1,7 @@
+
+Your NFT certificate has been minted to your wallet!
+
+🆔 Student ID: KL-SOL-0042
 📅 Completion Date: January 18, 2026
 📚 Course: Solidity Fundamentals
 
