@@ -34,6 +34,11 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+   - Explorer: https://scrollscan.com
+   - OpenSea: ✅ Supported
+   - Cost: Very low
+
+2. **Base** ⭐ Excellent choice
    - RPC: `https://mainnet.base.org`
    - Explorer: https://basescan.org
    - OpenSea: ✅ Supported
