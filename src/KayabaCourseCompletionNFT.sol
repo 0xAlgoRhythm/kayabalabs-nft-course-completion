@@ -106,3 +106,14 @@ uint256 tokenId = _nextTokenId++;
         
         return (tokenId, studentId);
     }
+
+
+    /**
+     * @dev Soulbound: Prevent transfers (certificates are non-transferable)
+     */
+    function _update(
+        address to,
+        uint256 tokenId,
+        address auth
+    ) internal virtual override returns (address) {
+        address from = _ownerOf(tokenId);
