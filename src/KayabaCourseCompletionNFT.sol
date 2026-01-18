@@ -57,3 +57,11 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
         _metadataURI = metadataURI;
         coursePrefix = _coursePrefix; // e.g., "KL-SOL"
     }
+
+    /**
+     * @dev Mint course completion certificate (auto-generates student ID)
+     * @param to Student's wallet address
+     * @param course Name of the completed course
+     * @param date Completion date (e.g., "January 16, 2024")
+     */
+    
