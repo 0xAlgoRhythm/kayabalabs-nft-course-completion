@@ -1,3 +1,7 @@
+    "setCoursePrefix(string)" \
+    "NEW-PREFIX" \
+    --rpc-url $SCROLL_MAINNET_RPC_URL \
+    --private-key $PRIVATE_KEY
 ```
 
 ---
