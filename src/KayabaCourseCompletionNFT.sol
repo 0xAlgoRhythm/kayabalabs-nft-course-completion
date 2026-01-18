@@ -33,3 +33,5 @@ contract KayabaCourseCompletionNFT is ERC721, ERC721URIStorage, Ownable {
     // Mapping from token ID to student information
     mapping(uint256 => StudentInfo) public studentInfo;
     
+// Single metadata URI (same for all tokens)
+    string private _metadataURI;
