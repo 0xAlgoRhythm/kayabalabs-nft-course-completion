@@ -233,4 +233,15 @@ function getStudentCertificates(address student)
         public 
         view 
         returns (uint256[] memory) 
- 
+ {
+        uint256 total = totalSupply();
+        uint256 count = 0;
+        
+        // First pass: count certificates
+        for (uint256 i = 0; i < total; i++) {
+            if (_ownerOf(i) == student) {
+                count++;
+            }
+        }
+        
+        uint256[] memory certificateIds = new uint256[](count);
