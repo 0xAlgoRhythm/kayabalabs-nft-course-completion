@@ -1,3 +1,9 @@
+### 1. Mint Single Certificate (Manual)
+
+```bash
+cast send $CONTRACT_ADDRESS \
+    "mintCertificate(address,string,string)" \
+    STUDENT_WALLET \
     "Solidity Fundamentals" \
     "January 18, 2026" \
     --value 0.0003ether \
