@@ -63,6 +63,8 @@ $ cast <subcommand>
 $ forge --help
 $ anvil --help
 $ cast --help
+```bash
+forge test -vvv
 ```
 
 ### Test Coverage
