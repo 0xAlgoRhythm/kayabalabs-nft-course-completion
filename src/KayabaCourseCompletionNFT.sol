@@ -117,3 +117,11 @@ uint256 tokenId = _nextTokenId++;
         address auth
     ) internal virtual override returns (address) {
         address from = _ownerOf(tokenId);
+
+         // Allow minting (from address(0)) but block transfers
+        if (from != address(0) && to != address(0)) {
+            revert("Certificate is soulbound and cannot be transferred");
+        }
+        
+        return super._update(to, tokenId, auth);
+    }
