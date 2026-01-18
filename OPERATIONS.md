@@ -1,4 +1,12 @@
 
+1. Open MetaMask
+2. Switch to Scroll network
+3. Click "NFTs" tab
+4. You should see "Kayaba Labs Certificate"
+
+METHOD 2 - OpenSea:
+Go to: https://opensea.io/assets/scroll/{CONTRACT_ADDRESS}/{TOKEN_ID}
+
 Go to: https://scrollscan.com/token/{CONTRACT_ADDRESS}?a={TOKEN_ID}
 
 Still don't see it? Reply with your wallet address and we'll check.
