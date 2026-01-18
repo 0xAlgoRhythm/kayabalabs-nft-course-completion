@@ -1,3 +1,8 @@
+✅ ~5 minutes to complete
+
+Your certificate will be:
+- Permanently stored on blockchain
+- Visible on OpenSea
 
 Need help? Reply to this email.
 
