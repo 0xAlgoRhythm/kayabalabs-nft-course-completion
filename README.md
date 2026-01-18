@@ -37,14 +37,15 @@ $ forge fmt
 
 ```shell
 $ forge snapshot
+├── .env                                  # Environment variables (DO NOT COMMIT)
 ├── .gitignore                            # Git ignore file
 ├── foundry.toml                          # Foundry configuration
 ├── README.md                             # This file
 ├── DEPLOYMENT.md                         # Mainnet deployment guide
 ├── OPERATIONS.md                         # Daily operations guide
+└── metadata.json                         # NFT metadata template
 ```
 
-### Anvil
 ---
 
 ## 🛠️ Development Setup
