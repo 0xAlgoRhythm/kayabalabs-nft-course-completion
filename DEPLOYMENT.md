@@ -4,7 +4,18 @@
 
 Before deploying to mainnet, ensure you have:
 
+- [ ] Contract tested on Sepolia testnet
+- [ ] At least 2-3 test certificates minted successfully
+- [ ] Metadata uploaded to Pinata/Lighthouse
+- [ ] Metadata URL tested and accessible
+- [ ] Image displays correctly on test mints
+- [ ] ~$5-10 worth of ETH on your chosen network
 - [ ] Private key backed up securely
+- [ ] Contract code reviewed and finalized
+
+---
+
+## 🎯 Recommended Networks & Costs
     --rpc-url $SCROLL_MAINNET_RPC_URL \
     --broadcast \
     --verify \
