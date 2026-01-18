@@ -53,8 +53,7 @@ $ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --pri
 
 ### Cast
 
-```shell
-$ cast <subcommand>
+```bash
 PRIVATE_KEY=your_private_key_here
 SCROLL_MAINNET_RPC_URL=https://rpc.scroll.io
 BASE_MAINNET_RPC_URL=https://mainnet.base.org
