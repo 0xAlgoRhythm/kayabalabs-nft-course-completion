@@ -6,6 +6,9 @@ Congratulations on completing {COURSE_NAME}!
 Claim your blockchain certificate:
 👉 {MINT_URL}
 
+Kayaba Labs Team
+```
+
 ### Certificate Minted (Bulk Mint)
 
 ```
