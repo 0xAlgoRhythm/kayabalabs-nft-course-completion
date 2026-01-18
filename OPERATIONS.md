@@ -1,3 +1,9 @@
+# Total certificates minted
+cast call $CONTRACT_ADDRESS "totalSupply()" --rpc-url $SCROLL_MAINNET_RPC_URL
+
+# Contract balance (fees collected)
+cast balance $CONTRACT_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
+
 # Last minted token info
 LAST_TOKEN=$(cast call $CONTRACT_ADDRESS "totalSupply()" --rpc-url $SCROLL_MAINNET_RPC_URL)
 LAST_TOKEN=$((LAST_TOKEN - 1))
