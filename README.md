@@ -58,6 +58,9 @@ $ cast <subcommand>
 ```
 
 ### Help
+## ✅ Testing
+
+### Run All Tests
 
 ```bash
 forge test -vvv
