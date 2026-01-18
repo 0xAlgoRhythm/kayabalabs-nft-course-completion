@@ -12,6 +12,7 @@ Your certificate has been minted!
 📚 Course: {COURSE_NAME}
 📅 Completed: {COMPLETION_DATE}
 
+View Certificate:
 - OpenSea: {OPENSEA_LINK}
 - Explorer: {EXPLORER_LINK}
 
