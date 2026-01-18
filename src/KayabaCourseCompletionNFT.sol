@@ -141,3 +141,19 @@ function batchMintCertificates(
         require(recipients.length == dates.length, "Recipients and dates length mismatch");
          string[] memory studentIds = new string[](recipients.length);
         
+        for (uint256 i = 0; i < recipients.length; i++) {
+            uint256 tokenId = _nextTokenId++;
+
+            // Auto-generate student ID
+            string memory studentId = string(
+                abi.encodePacked(
+                    coursePrefix,
+                    "-",
+                    _padNumber(tokenId + 1, 4)
+                )
+            );
+
+            _safeMint(recipients[i], tokenId);
+            _setTokenURI(tokenId, _metadataURI);
+            
+            
