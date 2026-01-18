@@ -1,4 +1,12 @@
 
+4. Send it to us or use it to mint
+
+Video guide: {YOUR_TUTORIAL_LINK}
+
+Need help? We can mint for you if you provide your wallet address.
+```
+
+### "How do I get ETH on Scroll?"
 
 **Response:**
 ```
