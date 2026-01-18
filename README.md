@@ -68,6 +68,11 @@ $ cast --help
 ---
 
 
+**Estimated Time to Launch:** 1-2 days
+
+---
+
+
 - [ ] Contract deployed to mainnet
 - [ ] 50+ certificates minted
 - [ ] $25+ in fees collected
