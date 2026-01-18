@@ -37,6 +37,11 @@ $ forge fmt
 
 ```shell
 $ forge snapshot
+├── .gitignore                            # Git ignore file
+├── foundry.toml                          # Foundry configuration
+├── README.md                             # This file
+├── DEPLOYMENT.md                         # Mainnet deployment guide
+├── OPERATIONS.md                         # Daily operations guide
 ```
 
 ### Anvil
