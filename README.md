@@ -58,6 +58,8 @@ $ cast <subcommand>
 ```
 
 ### Help
+---
+
 ## ✅ Testing
 
 ### Run All Tests
