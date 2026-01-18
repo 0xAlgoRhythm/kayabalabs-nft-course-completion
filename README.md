@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+- ✅ Certificate info retrieval
+
+### Manual Testing on Sepolia
+
 ```bash
 # Mint test certificate
 cast send 0x5f303F0F87a0A64292C784A3De47CB59edF4035C \
