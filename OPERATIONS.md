@@ -1,5 +1,7 @@
 # Get student ID for token
 cast call $CONTRACT_ADDRESS "getStudentId(uint256)" TOKEN_ID --rpc-url $SCROLL_MAINNET_RPC_URL
+
+# Get full certificate info
 cast call $CONTRACT_ADDRESS "getCertificateInfo(uint256)" TOKEN_ID --rpc-url $SCROLL_MAINNET_RPC_URL
 ```
 
