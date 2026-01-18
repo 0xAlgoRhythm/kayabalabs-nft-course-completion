@@ -1,4 +1,10 @@
 
+### Option 2: Bulk Mint (You Mint, They Pay via Stripe)
+
+**When to use:** Most students (easier, better UX)
+
+#### Process:
+
 1. **Collect wallet addresses during enrollment**
 
 Sample form fields:
