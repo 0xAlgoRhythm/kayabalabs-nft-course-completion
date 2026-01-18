@@ -34,6 +34,9 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+### Network Costs (L2 Deployment)
+
+| Network | Deploy | Per Mint | Total (100 mints) |
 |---------|--------|----------|-------------------|
 | Scroll | $2-5 | $0.01-0.05 | $3-10 |
 | Base | $2-5 | $0.01-0.05 | $3-10 |
