@@ -8,6 +8,7 @@ contract KayabaCourseCompletionNFTTest is Test {
     KayabaCourseCompletionNFT public nft;
     address public owner;
     address public student1;
+    
     uint256 constant MINT_FEE = 0.0003 ether;
     
     receive() external payable {}
