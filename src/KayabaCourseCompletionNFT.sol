@@ -292,3 +292,4 @@ function getStudentCertificates(address student)
         
         return string(padded);
     }
+    
