@@ -1,9 +1,11 @@
+
 #### Track Self-Mints:
 
 ```bash
 # Check total certificates minted
 cast call $CONTRACT_ADDRESS "totalSupply()" --rpc-url $SCROLL_MAINNET_RPC_URL
 
+# Check if specific student minted
 cast call $CONTRACT_ADDRESS "balanceOf(address)" STUDENT_WALLET --rpc-url $SCROLL_MAINNET_RPC_URL
 
 # Get student's certificate details
