@@ -22,10 +22,8 @@ $ forge build
 ```
 
 ### Test
+    public payable returns (uint256, string)
 
-```shell
-$ forge test
-```
 // Admin bulk mint (free)
 function batchMintCertificates(address[] recipients, string course, string[] dates) 
     public onlyOwner returns (string[])
@@ -33,7 +31,6 @@ function batchMintCertificates(address[] recipients, string course, string[] dat
 // Fee withdrawal
 function withdrawFees() public onlyOwner
 
-```shell
 // Data retrieval
 function getCertificateInfo(uint256 tokenId) 
     public view returns (string studentId, string course, string date, address wallet)
