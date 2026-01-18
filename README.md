@@ -67,6 +67,10 @@ $ cast --help
 
 ---
 
+## 📜 License
+
+MIT License - See contract header for details
+
 ---
 
 ## 🔗 Links
