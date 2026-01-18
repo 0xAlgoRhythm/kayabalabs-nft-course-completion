@@ -1,0 +1,76 @@
+<!-- mint.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mint Your Kayaba Certificate</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"></script>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; }
+        button { background: #0066ff; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #0052cc; }
+        .info { background: #f0f0f0; padding: 15px; border-radius: 5px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>🎓 Mint Your Course Certificate</h1>
+    
+    <div class="info">
+        <p><strong>Course:</strong> Solidity Fundamentals</p>
+        <p><strong>Cost:</strong> $0.50 (0.0003 ETH + small gas fee)</p>
+        <p><strong>Network:</strong> Scroll</p>
+    </div>
+
+    <button onclick="mintCertificate()">Mint My Certificate</button>
+    <p id="status"></p>
+
+    <script>
+        const CONTRACT = "0x5f303F0F87a0A64292C784A3De47CB59edF4035C";
+        const ABI = ["function mintCertificate(address,string,string) payable returns (uint256,string)"];
+
+        async function mintCertificate() {
+            const status = document.getElementById('status');
+            
+            try {
+                if (!window.ethereum) {
+                    status.innerHTML = '❌ Please install MetaMask first!<br><a href="https://metamask.io">Get MetaMask</a>';
+                    return;
+                }
+
+                status.innerText = '🔌 Connecting to wallet...';
+                const provider = new ethers.providers.Web3Provider(window.ethereum);
+                await provider.send("eth_requestAccounts", []);
+                const signer = provider.getSigner();
+                const address = await signer.getAddress();
+                
+                const contract = new ethers.Contract(CONTRACT, ABI, signer);
+                
+                status.innerText = '💸 Please confirm the transaction in MetaMask...';
+                
+                const today = new Date().toLocaleDateString('en-US', { 
+                    year: 'numeric', month: 'long', day: 'numeric' 
+                });
+                
+                const tx = await contract.mintCertificate(
+                    address,
+                    "Solidity Fundamentals",
+                    today,
+                    { value: ethers.utils.parseEther("0.0003") }
+                );
+                
+                status.innerText = '⏳ Waiting for confirmation...';
+                const receipt = await tx.wait();
+                
+                status.innerHTML = `
+                    ✅ <strong>Certificate Minted Successfully!</strong><br><br>
+                    View on OpenSea: <a href="https://opensea.io/assets/scroll/${CONTRACT}/..." target="_blank">Click here</a><br>
+                    Transaction: <a href="https://scrollscan.com/tx/${receipt.transactionHash}" target="_blank">View on Explorer</a>
+                `;
+                
+            } catch (error) {
+                console.error(error);
+                status.innerText = '❌ Error: ' + (error.message || 'Transaction failed');
+            }
+        }
+    </script>
+</body>
+</html>

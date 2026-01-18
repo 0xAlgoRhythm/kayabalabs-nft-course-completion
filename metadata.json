@@ -1,0 +1,28 @@
+{
+  "name": "Kayaba Labs - Solidity Fundamentals Certificate",
+  "description": "This certificate verifies successful completion of the Solidity Fundamentals course at Kayaba Labs. This is an official soulbound credential that cannot be transferred.",
+  "image": "https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreiawpz2cyeckfyjck5ugdkpekcoot2t2ooprmptzqwc4kixc7h3pli",
+  "external_url": "https://kayabalabs.com",
+  "attributes": [
+    {
+      "trait_type": "Achievement Type",
+      "value": "Course Completion"
+    },
+    {
+      "trait_type": "Course Name",
+      "value": "Solidity Fundamentals"
+    },
+    {
+      "trait_type": "Institution",
+      "value": "Kayaba Labs"
+    },
+    {
+      "trait_type": "Course Level",
+      "value": "Beginner"
+    },
+    {
+      "trait_type": "Certificate Type",
+      "value": "Soulbound NFT"
+    }
+  ]
+}
