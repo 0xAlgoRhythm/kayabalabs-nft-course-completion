@@ -21,7 +21,9 @@ https://book.getfoundry.sh/
 $ forge build
 ```
 
-### Test
+```solidity
+// Student self-mint (pays $0.50)
+function mintCertificate(address to, string course, string date) 
     public payable returns (uint256, string)
 
 // Admin bulk mint (free)
