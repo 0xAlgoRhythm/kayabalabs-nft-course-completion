@@ -1,3 +1,9 @@
+```
+
+---
+
+## 🔧 Common Operations
+
 ### 1. Mint Single Certificate (Manual)
 
 ```bash
