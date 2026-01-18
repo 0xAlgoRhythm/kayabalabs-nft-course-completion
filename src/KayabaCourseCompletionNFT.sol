@@ -84,3 +84,7 @@ uint256 tokenId = _nextTokenId++;
                 _padNumber(tokenId + 1, 4)
             )
         );
+
+         _safeMint(to, tokenId);
+        _setTokenURI(tokenId, _metadataURI);
+        
