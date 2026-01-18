@@ -252,3 +252,8 @@ function getStudentCertificates(address student)
                 certificateIds[index++] = i;
             }
         }
+        return certificateIds;
+    }
+    /**
+     * @dev Pad number with leading zeros
+     */
