@@ -3,6 +3,8 @@
 ```
 Subject: ✅ Your Certificate Has Been Minted!
 
+Hi [Student Name],
+
 Your NFT certificate has been minted to your wallet!
 
 🆔 Student ID: KL-SOL-0042
