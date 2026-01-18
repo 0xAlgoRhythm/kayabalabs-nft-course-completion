@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+    "Solidity Fundamentals" \
+    "January 18, 2026" \
+    --value 0.0003ether \
+    --rpc-url https://sepolia.drpc.org \
     --private-key $PRIVATE_KEY
 ```
 
