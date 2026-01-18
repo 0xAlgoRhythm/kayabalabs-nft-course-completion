@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+- ✅ Batch minting (owner only)
+- ✅ Fee withdrawal
+- ✅ Auto student ID generation
+- ✅ Soulbound transfer prevention
 - ✅ Certificate info retrieval
 
 ### Manual Testing on Sepolia
