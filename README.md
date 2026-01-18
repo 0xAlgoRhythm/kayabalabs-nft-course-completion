@@ -67,6 +67,11 @@ $ cast --help
 
 ---
 
+- Base: https://docs.base.org/
+
+**Tools:**
+- Pinata (IPFS): https://pinata.cloud
+- Lighthouse: https://lighthouse.storage
 - OpenSea: https://opensea.io
 - Etherscan: https://etherscan.io
 
