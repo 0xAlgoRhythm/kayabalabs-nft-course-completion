@@ -10,8 +10,14 @@
       "value": "Course Completion"
     },
     {
+      "trait_type": "Course Name",
+      "value": "Solidity Fundamentals"
+    },
+    {
       "trait_type": "Institution",
       "value": "Kayaba Labs"
+    },
+    {
       "trait_type": "Course Level",
       "value": "Beginner"
     },
