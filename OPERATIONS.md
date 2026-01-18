@@ -1,4 +1,13 @@
 
+```
+Subject: ⏰ Don't forget your certificate!
+
+Hi {STUDENT_NAME},
+
+You haven't claimed your course certificate yet.
+
+Claim now: {MINT_URL}
+
 Best,
 Kayaba Labs Team
 ```
