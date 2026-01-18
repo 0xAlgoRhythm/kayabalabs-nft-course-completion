@@ -1,3 +1,9 @@
+```
+
+3. **Student visits minting page**
+4. **Student connects MetaMask**
+5. **Student pays 0.0003 ETH (~$0.50)**
+6. **Certificate minted automatically**
 
 #### Track Self-Mints:
 
