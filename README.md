@@ -34,6 +34,10 @@ $ forge fmt
 ```
 
 ### Gas Snapshots
+- Net: $45-49 per 100 students
+
+**Recommended:** Include $0.50 in course price, bulk mint for best UX
+
 ### Network Costs (L2 Deployment)
 
 | Network | Deploy | Per Mint | Total (100 mints) |
