@@ -18,7 +18,7 @@ contract KayabaCourseCompletionNFTTest is Test {
         student1 = address(0x1);
         
         nft = new KayabaCourseCompletionNFT(
-            "https://gateway.lighthouse.storage/ipfs/metadata.json",
+            "https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreia6rxkezois2eymzxbikacx5egnrfvteqsky6gcswscjzmlummccu",
             "KL-SOL"
         );
         
@@ -43,14 +43,14 @@ contract KayabaCourseCompletionNFTTest is Test {
         (uint256 tokenId1, ) = nft.mintCertificate{value: MINT_FEE}(
             student1,
             "Solidity Fundamentals",
-            "Jan 16, 2024"
+            "Jan 18, 2026"
         );
         
         // Mint second certificate
         (uint256 tokenId2, ) = nft.mintCertificate{value: MINT_FEE}(
             student1,
             "Solidity Fundamentals",
-            "Jan 16, 2024"
+            "Jan 18, 2026"
         );
         
         assertEq(tokenId1, 0);
@@ -63,7 +63,7 @@ contract KayabaCourseCompletionNFTTest is Test {
         nft.mintCertificate{value: MINT_FEE}(
             student1,
             "Solidity Fundamentals",
-            "Jan 16, 2024"
+            "Jan 18, 2026"
         );
         
         uint256 balanceBefore = owner.balance;
