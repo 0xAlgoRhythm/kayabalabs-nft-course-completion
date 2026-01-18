@@ -1,3 +1,6 @@
+source .env
+
+# Student data
 WALLETS='["0x1234567890abcdef1234567890abcdef12345678","0xabcdef1234567890abcdef1234567890abcdef12","0x567890abcdef1234567890abcdef1234567890ab"]'
 DATES='["January 18 2026","January 18 2026","January 19 2026"]'
 COURSE="Solidity Fundamentals"
