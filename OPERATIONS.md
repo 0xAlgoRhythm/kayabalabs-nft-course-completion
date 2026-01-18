@@ -1,3 +1,7 @@
+
+```bash
+# Get all token IDs owned by wallet
+cast call $CONTRACT_ADDRESS "getStudentCertificates(address)" WALLET_ADDRESS --rpc-url $SCROLL_MAINNET_RPC_URL
 ```
 
 ### 4. Update Metadata URI (if needed)
