@@ -41,6 +41,14 @@ cd /mnt/c/Users/user/desktop/kayabalabs-nft
 ls -la .env
 ```
 
+### Step 2: Update Environment Variables
+
+Edit `.env` file:
+
+```bash
+nano .env
+```
+
 Add mainnet configuration:
 
 ```bash
