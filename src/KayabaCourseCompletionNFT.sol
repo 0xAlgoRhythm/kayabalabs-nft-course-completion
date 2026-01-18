@@ -126,5 +126,18 @@ uint256 tokenId = _nextTokenId++;
         return super._update(to, tokenId, auth);
     }
 
+/**
+     * @dev Batch mint certificates (only owner, no fees)
+     * @param recipients Array of student wallet addresses
+     * @param course Name of the course (same for all)
+     * @param dates Array of completion dates
+     */
 
-    
+function batchMintCertificates(
+        address[] memory recipients,
+        string memory course,
+        string[] memory dates
+    ) public onlyOwner returns (string[] memory) {
+        require(recipients.length == dates.length, "Recipients and dates length mismatch");
+         string[] memory studentIds = new string[](recipients.length);
+        
