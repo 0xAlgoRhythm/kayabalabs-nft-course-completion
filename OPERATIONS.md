@@ -1,3 +1,7 @@
+📅 Completion Date: January 18, 2026
+📚 Course: Solidity Fundamentals
+
+VIEW YOUR CERTIFICATE:
 - OpenSea: https://opensea.io/assets/scroll/CONTRACT_ADDRESS/41
 - Explorer: https://scrollscan.com/token/CONTRACT_ADDRESS?a=41
 - Your Wallet: Open MetaMask → NFTs tab
