@@ -1,3 +1,7 @@
+
+5. **Run weekly bulk mint script:**
+
+```bash
 #!/bin/bash
 # bulk-mint.sh
 
