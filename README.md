@@ -33,11 +33,12 @@ $ forge test
 $ forge fmt
 ```
 
-### Gas Snapshots
+**Technology Stack:**
 - Solidity 0.8.29
 - OpenZeppelin Contracts (ERC721, Ownable)
 - Foundry for development and testing
 
+### Data Storage
 
 **On-Chain (Smart Contract):**
 - Student ID (auto-generated)
