@@ -65,6 +65,10 @@ $ anvil --help
 $ cast --help
 ```
 
+
+### Phase 3: Enhancement
+- [ ] Build admin dashboard for monitoring
+- [ ] Add analytics tracking (total mints, revenue, etc.)
 - [ ] Create certificate verification page (check by student ID)
 - [ ] Integrate with course platform (auto-mint on completion)
 - [ ] Add certificate gallery for students
