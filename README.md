@@ -26,8 +26,12 @@ $ forge build
 ```shell
 $ forge test
 ```
+// Admin bulk mint (free)
+function batchMintCertificates(address[] recipients, string course, string[] dates) 
+    public onlyOwner returns (string[])
 
-### Format
+// Fee withdrawal
+function withdrawFees() public onlyOwner
 
 ```shell
 // Data retrieval
