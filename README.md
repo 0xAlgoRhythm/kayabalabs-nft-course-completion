@@ -67,6 +67,10 @@ $ cast --help
 
 ---
 
+
+## 🔗 Links
+
+**Test Deployment:**
 - Metadata: https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreia6rxkezois2eymzxbikacx5egnrfvteqsky6gcswscjzmlummccu
 
 **Documentation:**
