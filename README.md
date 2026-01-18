@@ -67,11 +67,15 @@ $ cast --help
 
 ---
 
+- OpenSea: https://opensea.io
+- Etherscan: https://etherscan.io
+
 ---
 
 ## 📞 Support
 
 For technical issues:
+1. Check DEPLOYMENT.md troubleshooting section
 2. Check OPERATIONS.md for common questions
 3. Review contract code and comments
 4. Test on Sepolia before mainnet
