@@ -65,6 +65,11 @@ $ anvil --help
 $ cast --help
 ```
 
+```bash
+# Mint test certificate
+cast send 0x5f303F0F87a0A64292C784A3De47CB59edF4035C \
+    "mintCertificate(address,string,string)" \
+    YOUR_WALLET \
     "Solidity Fundamentals" \
     "January 18, 2026" \
     --value 0.0003ether \
