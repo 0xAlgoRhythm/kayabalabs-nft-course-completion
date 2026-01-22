@@ -70,7 +70,7 @@ OPTIMISM_API_KEY=your_api_key_here
 POLYGONSCAN_API_KEY=your_api_key_here
 
 # Metadata URL (from Pinata/Lighthouse)
-METADATA_URI=https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreia6rxkezois2eymzxbikacx5egnrfvteqsky6gcswscjzmlummccu
+METADATA_URI=https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreigwxq3idiphzvosbd55ytwcgbdeatr26aaqw4osvk7yw4jydvjolu
 
 # Course prefix for student IDs
 COURSE_PREFIX=KL-SOL

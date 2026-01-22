@@ -368,8 +368,8 @@ MIT License - See contract header for details
 ## 🔗 Links
 
 **Test Deployment:**
-- Contract: https://sepolia.etherscan.io/address/0x5f303F0F87a0A64292C784A3De47CB59edF4035C
-- Metadata: https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreia6rxkezois2eymzxbikacx5egnrfvteqsky6gcswscjzmlummccu
+- Contract: https://sepolia.etherscan.io/address/0xA64d57395a02cF0267F487ec4DBe43a43c11ef86
+- Metadata: https://coral-genuine-koi-966.mypinata.cloud/ipfs/bafkreigwxq3idiphzvosbd55ytwcgbdeatr26aaqw4osvk7yw4jydvjolu
 
 **Documentation:**
 - Foundry: https://book.getfoundry.sh/
