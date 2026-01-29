@@ -73,3 +73,4 @@ contract KayabaCourseCompletionNFTTest is Test {
         assertEq(balanceAfter - balanceBefore, MINT_FEE);
     }
 }
+// commit-marker-49
