@@ -314,4 +314,3 @@ function getStudentCertificates(address student)
         return super.supportsInterface(interfaceId);
     }
 }
-// commit-marker-102
